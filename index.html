@@ -778,13 +778,15 @@ function buildRazTransactions(acc) {
 
 function renderRazonetes() {
   const container = document.getElementById('razContainer');
-  if (!container || container.dataset.rendered) return;
+  if (!container) return;
+  if (container.dataset.rendered === '1') return;
   container.dataset.rendered = '1';
   let html = '';
   for (const acc of RAZ_ACCOUNTS) {
     const si = SI[acc];
     const txs = buildRazTransactions(acc);
     const g = GABARITO[acc];
+    const key = acc.replace(/[^a-z0-9]/gi,'_');
     const savedD = localStorage.getItem('raz_D_'+acc) || '';
     const savedC = localStorage.getItem('raz_C_'+acc) || '';
 
