@@ -22,7 +22,7 @@ tailwind.config = {
 </script>
 <style>
 *{box-sizing:border-box}
-body{background:#0a0f1e;color:#e2e8f0;font-family:'Inter',sans-serif;margin:0;padding:0}
+body{background:#0a0f1e;color:#e2e8f0;font-family:sans-serif;margin:0;padding:0}
 .tab-content{display:none}.tab-content.active{display:block}
 .sticky-nav{position:sticky;top:0;z-index:100;background:linear-gradient(135deg,#111827,#1a2438);border-bottom:2px solid #e8b830;box-shadow:0 4px 20px rgba(0,0,0,.5)}
 .nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;gap:0;overflow-x:auto;scrollbar-width:none}
@@ -35,7 +35,7 @@ body{background:#0a0f1e;color:#e2e8f0;font-family:'Inter',sans-serif;margin:0;pa
 .card-gold{border-color:rgba(244,200,66,.4);background:linear-gradient(135deg,rgba(244,200,66,.07),rgba(244,200,66,.03))}
 .card-green{border-color:rgba(52,211,153,.3);background:rgba(52,211,153,.05)}
 .card-red{border-color:rgba(239,68,68,.3);background:rgba(239,68,68,.05)}
-.section-title{font-family:'Playfair Display',serif;font-size:1.6rem;color:#f4c842;margin-bottom:20px}
+.section-title{font-family:serif;font-size:1.6rem;color:#f4c842;margin-bottom:20px}
 .badge{display:inline-block;padding:3px 10px;border-radius:20px;font-size:.75rem;font-weight:600}
 .badge-gold{background:rgba(244,200,66,.2);color:#f4c842;border:1px solid rgba(244,200,66,.4)}
 .badge-blue{background:rgba(96,165,250,.15);color:#93c5fd;border:1px solid rgba(96,165,250,.3)}
@@ -59,11 +59,11 @@ table.data-table tr:hover td{background:rgba(255,255,255,.03)}
 .raz-grid{display:grid;grid-template-columns:1fr 1fr;gap:0}
 .raz-col-header{background:rgba(244,200,66,.1);padding:6px;text-align:center;font-size:.75rem;font-weight:700;color:#94a3b8;letter-spacing:.05em;border-bottom:1px solid #243558}
 .raz-debit{border-right:1px solid #243558}
-.raz-entry{display:flex;justify-content:space-between;align-items:center;padding:5px 10px;border-bottom:1px solid rgba(255,255,255,.04);font-family:'JetBrains Mono',monospace;font-size:.78rem}
+.raz-entry{display:flex;justify-content:space-between;align-items:center;padding:5px 10px;border-bottom:1px solid rgba(255,255,255,.04);font-family:monospace;font-size:.78rem}
 .raz-entry .ref{color:#64748b;font-size:.7rem;margin-right:6px}
 .raz-entry .val{color:#e2e8f0}
 .raz-entry.si .val{color:#f4c842}
-.raz-entry.student input{background:#0a0f1e;border:1px solid #243558;border-radius:4px;color:#e2e8f0;font-family:'JetBrains Mono',monospace;font-size:.78rem;padding:2px 6px;width:90px;text-align:right}
+.raz-entry.student input{background:#0a0f1e;border:1px solid #243558;border-radius:4px;color:#e2e8f0;font-family:monospace;font-size:.78rem;padding:2px 6px;width:90px;text-align:right}
 .raz-entry.student input:focus{outline:none;border-color:#e8b830;box-shadow:0 0 0 2px rgba(232,184,48,.2)}
 .raz-entry.saldo{background:rgba(244,200,66,.07);border-top:2px solid rgba(244,200,66,.3)}
 .raz-entry.saldo .val{color:#f4c842;font-weight:700}
@@ -71,7 +71,7 @@ table.data-table tr:hover td{background:rgba(255,255,255,.03)}
 .raz-entry.wrong{background:rgba(239,68,68,.08)}
 .step-card{border:1px solid #243558;border-radius:12px;padding:20px;margin-bottom:12px;background:#111827}
 .step-card.active-step{border-color:rgba(244,200,66,.5);background:rgba(244,200,66,.05)}
-.je-line{display:grid;grid-template-columns:40px 220px 1fr 1fr;gap:8px;padding:5px 0;font-family:'JetBrains Mono',monospace;font-size:.82rem;align-items:center;border-bottom:1px solid rgba(255,255,255,.05)}
+.je-line{display:grid;grid-template-columns:40px 220px 1fr 1fr;gap:8px;padding:5px 0;font-family:monospace;font-size:.82rem;align-items:center;border-bottom:1px solid rgba(255,255,255,.05)}
 .je-line .acct-debit{color:#93c5fd;padding-left:0}
 .je-line .acct-credit{color:#fca5a5;padding-left:28px}
 .je-line .val-debit{color:#93c5fd;text-align:right}
@@ -86,16 +86,16 @@ table.data-table tr:hover td{background:rgba(255,255,255,.03)}
 .bp-row.header{background:rgba(244,200,66,.1);font-weight:700;color:#f4c842;font-size:.8rem;letter-spacing:.05em}
 .bp-row.subtotal{border-top:1px solid rgba(244,200,66,.3);font-weight:600;color:#f4c842}
 .bp-row.total{background:rgba(244,200,66,.15);font-weight:700;color:#f4c842;font-size:.95rem;border-top:2px solid #e8b830}
-.equiv-input{background:#0a0f1e;border:1px solid #243558;border-radius:6px;color:#e2e8f0;font-family:'JetBrains Mono',monospace;padding:6px 10px;width:80px;text-align:center;font-size:.9rem}
+.equiv-input{background:#0a0f1e;border:1px solid #243558;border-radius:6px;color:#e2e8f0;font-family:monospace;padding:6px 10px;width:80px;text-align:center;font-size:.9rem}
 .equiv-input:focus{outline:none;border-color:#e8b830;box-shadow:0 0 0 2px rgba(232,184,48,.2)}
-.cpp-input{background:#0a0f1e;border:1px solid #243558;border-radius:6px;color:#e2e8f0;font-family:'JetBrains Mono',monospace;padding:6px 10px;width:110px;text-align:right;font-size:.9rem}
+.cpp-input{background:#0a0f1e;border:1px solid #243558;border-radius:6px;color:#e2e8f0;font-family:monospace;padding:6px 10px;width:110px;text-align:right;font-size:.9rem}
 .cpp-input:focus{outline:none;border-color:#e8b830;box-shadow:0 0 0 2px rgba(232,184,48,.2)}
-.formula-box{background:#0a0f1e;border:1px solid rgba(244,200,66,.3);border-radius:10px;padding:16px;font-family:'JetBrains Mono',monospace;font-size:.9rem;color:#f4c842;text-align:center;letter-spacing:.05em}
+.formula-box{background:#0a0f1e;border:1px solid rgba(244,200,66,.3);border-radius:10px;padding:16px;font-family:monospace;font-size:.9rem;color:#f4c842;text-align:center;letter-spacing:.05em}
 .highlight{color:#f4c842;font-weight:700}
 .info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
 .info-card{background:#111827;border:1px solid #1e2d47;border-radius:10px;padding:16px;text-align:center}
 .info-card .label{font-size:.75rem;color:#64748b;letter-spacing:.05em;text-transform:uppercase;margin-bottom:6px}
-.info-card .value{font-size:1.4rem;font-weight:700;color:#f4c842;font-family:'JetBrains Mono',monospace}
+.info-card .value{font-size:1.4rem;font-weight:700;color:#f4c842;font-family:monospace}
 .info-card .sub{font-size:.75rem;color:#94a3b8;margin-top:4px}
 .msg{padding:12px 18px;border-radius:8px;font-size:.88rem;margin-top:12px}
 .msg-success{background:rgba(16,185,129,.12);border:1px solid rgba(16,185,129,.3);color:#6ee7b7}
@@ -107,6 +107,7 @@ table.data-table tr:hover td{background:rgba(255,255,255,.03)}
 .tag-d{background:rgba(96,165,250,.15);color:#93c5fd}
 .tag-c{background:rgba(252,165,165,.15);color:#fca5a5}
 hr.gold{border:none;border-top:1px solid rgba(244,200,66,.2);margin:20px 0}
+.mono-val{font-family:'JetBrains Mono',monospace}
 </style>
 </head>
 <body>
@@ -130,7 +131,7 @@ hr.gold{border:none;border-top:1px solid rgba(244,200,66,.2);margin:20px 0}
     <div style="background:linear-gradient(135deg,#e8b830,#d4a020);width:50px;height:50px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0">🏭</div>
     <div>
       <div style="font-size:.8rem;color:#64748b;letter-spacing:.1em;text-transform:uppercase;margin-bottom:4px">Contabilidade Industrial</div>
-      <div style="font-family:'Playfair Display',serif;font-size:1.8rem;color:#f4c842;line-height:1">Exercício Completo — v7.0</div>
+      <div style="font-family:serif;font-size:1.8rem;color:#f4c842;line-height:1">Exercício Completo — v7.0</div>
     </div>
   </div>
 
@@ -176,7 +177,7 @@ hr.gold{border:none;border-top:1px solid rgba(244,200,66,.2);margin:20px 0}
       </div>
       <div style="background:#0a0f1e;border-radius:10px;padding:16px;border:1px solid #243558">
         <div style="font-size:.75rem;color:#64748b;margin-bottom:8px">VENDAS</div>
-        <div style="font-size:1.3rem;font-weight:700;color:#f4c842;font-family:'JetBrains Mono',monospace">2.000 und</div>
+        <div style="font-size:1.3rem;font-weight:700;color:#f4c842;font-family:monospace">2.000 und</div>
         <div style="font-size:.8rem;color:#94a3b8;margin-top:4px">R$ 570.000 + IPI R$ 46.000</div>
         <div style="font-size:.8rem;color:#94a3b8">ICMS R$ 88.000 (por dentro)</div>
       </div>
@@ -194,30 +195,30 @@ hr.gold{border:none;border-top:1px solid rgba(244,200,66,.2);margin:20px 0}
       <div>
         <div style="font-size:.78rem;font-weight:700;color:#94a3b8;margin-bottom:10px;text-transform:uppercase;letter-spacing:.05em">ATIVO</div>
         <table class="data-table">
-          <tr><td>BCM</td><td style="text-align:right;font-family:'JetBrains Mono',monospace;color:#34d399">195.760,00</td></tr>
-          <tr><td>Clientes</td><td style="text-align:right;font-family:'JetBrains Mono',monospace;color:#34d399">1.184.368,00</td></tr>
-          <tr><td>Estoque MP</td><td style="text-align:right;font-family:'JetBrains Mono',monospace;color:#34d399">4.000,00</td></tr>
-          <tr><td>Est. Elaboração</td><td style="text-align:right;font-family:'JetBrains Mono',monospace;color:#34d399">5.203,20</td></tr>
-          <tr><td>Est. Acabados</td><td style="text-align:right;font-family:'JetBrains Mono',monospace;color:#34d399">44.536,00</td></tr>
-          <tr><td>Máquinas</td><td style="text-align:right;font-family:'JetBrains Mono',monospace;color:#34d399">600.000,00</td></tr>
-          <tr><td>(-) Dep. Acum. Máq.</td><td style="text-align:right;font-family:'JetBrains Mono',monospace;color:#fca5a5">(20.000,00)</td></tr>
-          <tr><td>Imóveis</td><td style="text-align:right;font-family:'JetBrains Mono',monospace;color:#34d399">1.200.000,00</td></tr>
-          <tr><td>(-) Dep. Acum. Imóv.</td><td style="text-align:right;font-family:'JetBrains Mono',monospace;color:#fca5a5">(16.000,00)</td></tr>
-          <tr style="font-weight:700;border-top:2px solid rgba(244,200,66,.3)"><td style="color:#f4c842">TOTAL ATIVO</td><td style="text-align:right;font-family:'JetBrains Mono',monospace;color:#f4c842">3.197.867,20</td></tr>
+          <tr><td>BCM</td><td style="text-align:right;font-family:monospace;color:#34d399">195.760,00</td></tr>
+          <tr><td>Clientes</td><td style="text-align:right;font-family:monospace;color:#34d399">1.184.368,00</td></tr>
+          <tr><td>Estoque MP</td><td style="text-align:right;font-family:monospace;color:#34d399">4.000,00</td></tr>
+          <tr><td>Est. Elaboração</td><td style="text-align:right;font-family:monospace;color:#34d399">5.203,20</td></tr>
+          <tr><td>Est. Acabados</td><td style="text-align:right;font-family:monospace;color:#34d399">44.536,00</td></tr>
+          <tr><td>Máquinas</td><td style="text-align:right;font-family:monospace;color:#34d399">600.000,00</td></tr>
+          <tr><td>(-) Dep. Acum. Máq.</td><td style="text-align:right;font-family:monospace;color:#fca5a5">(20.000,00)</td></tr>
+          <tr><td>Imóveis</td><td style="text-align:right;font-family:monospace;color:#34d399">1.200.000,00</td></tr>
+          <tr><td>(-) Dep. Acum. Imóv.</td><td style="text-align:right;font-family:monospace;color:#fca5a5">(16.000,00)</td></tr>
+          <tr style="font-weight:700;border-top:2px solid rgba(244,200,66,.3)"><td style="color:#f4c842">TOTAL ATIVO</td><td style="text-align:right;font-family:monospace;color:#f4c842">3.197.867,20</td></tr>
         </table>
       </div>
       <div>
         <div style="font-size:.78rem;font-weight:700;color:#94a3b8;margin-bottom:10px;text-transform:uppercase;letter-spacing:.05em">PASSIVO + PL</div>
         <table class="data-table">
-          <tr><td>Fornecedores</td><td style="text-align:right;font-family:'JetBrains Mono',monospace;color:#34d399">30.900,00</td></tr>
-          <tr><td>Energia a Pagar</td><td style="text-align:right;font-family:'JetBrains Mono',monospace;color:#34d399">4.800,00</td></tr>
-          <tr><td>Contas a Pagar</td><td style="text-align:right;font-family:'JetBrains Mono',monospace;color:#34d399">13.100,00</td></tr>
-          <tr><td>Salários a Pagar</td><td style="text-align:right;font-family:'JetBrains Mono',monospace;color:#34d399">160.500,00</td></tr>
-          <tr><td>IPI a Recolher</td><td style="text-align:right;font-family:'JetBrains Mono',monospace;color:#34d399">99.210,00</td></tr>
-          <tr><td>ICMS a Recolher</td><td style="text-align:right;font-family:'JetBrains Mono',monospace;color:#34d399">216.030,00</td></tr>
-          <tr><td>Capital Social</td><td style="text-align:right;font-family:'JetBrains Mono',monospace;color:#34d399">2.000.000,00</td></tr>
-          <tr><td>Reserva de Lucros</td><td style="text-align:right;font-family:'JetBrains Mono',monospace;color:#34d399">673.327,20</td></tr>
-          <tr style="font-weight:700;border-top:2px solid rgba(244,200,66,.3)"><td style="color:#f4c842">TOTAL PASSIVO+PL</td><td style="text-align:right;font-family:'JetBrains Mono',monospace;color:#f4c842">3.197.867,20</td></tr>
+          <tr><td>Fornecedores</td><td style="text-align:right;font-family:monospace;color:#34d399">30.900,00</td></tr>
+          <tr><td>Energia a Pagar</td><td style="text-align:right;font-family:monospace;color:#34d399">4.800,00</td></tr>
+          <tr><td>Contas a Pagar</td><td style="text-align:right;font-family:monospace;color:#34d399">13.100,00</td></tr>
+          <tr><td>Salários a Pagar</td><td style="text-align:right;font-family:monospace;color:#34d399">160.500,00</td></tr>
+          <tr><td>IPI a Recolher</td><td style="text-align:right;font-family:monospace;color:#34d399">99.210,00</td></tr>
+          <tr><td>ICMS a Recolher</td><td style="text-align:right;font-family:monospace;color:#34d399">216.030,00</td></tr>
+          <tr><td>Capital Social</td><td style="text-align:right;font-family:monospace;color:#34d399">2.000.000,00</td></tr>
+          <tr><td>Reserva de Lucros</td><td style="text-align:right;font-family:monospace;color:#34d399">673.327,20</td></tr>
+          <tr style="font-weight:700;border-top:2px solid rgba(244,200,66,.3)"><td style="color:#f4c842">TOTAL PASSIVO+PL</td><td style="text-align:right;font-family:monospace;color:#f4c842">3.197.867,20</td></tr>
         </table>
       </div>
     </div>
@@ -297,7 +298,7 @@ hr.gold{border:none;border-top:1px solid rgba(244,200,66,.2);margin:20px 0}
     </div>
     <div style="margin-top:16px;background:#0a0f1e;border-radius:10px;padding:14px;border-left:3px solid #34d399">
       <div style="font-size:.78rem;color:#64748b;margin-bottom:6px">RECONCILIAÇÃO DE UNIDADES</div>
-      <div style="font-family:'JetBrains Mono',monospace;font-size:.85rem;color:#e2e8f0">
+      <div style="font-family:monospace;font-size:.85rem;color:#e2e8f0">
         Est. Acab. Inicial (1.060) + Prod. Acabadas (1.400) = 2.460 disponíveis<br>
         Vendidas (2.000) → Est. Acab. Final = <span style="color:#f4c842;font-weight:700">460 unidades</span>
       </div>
@@ -387,21 +388,21 @@ hr.gold{border:none;border-top:1px solid rgba(244,200,66,.2);margin:20px 0}
     <div style="font-size:.78rem;font-weight:700;color:#94a3b8;margin-bottom:12px;text-transform:uppercase">DISTRIBUIÇÃO DO CPP</div>
     <table class="data-table">
       <tr><th>Destino</th><th>Equiv.</th><th>× R$43,36</th><th style="text-align:right">Valor</th></tr>
-      <tr><td>Est. Elaboração Final</td><td>250 und</td><td>250 × 43,36</td><td style="text-align:right;font-family:'JetBrains Mono',monospace;color:#f4c842">R$ 10.840,00</td></tr>
-      <tr><td>CPA (produtos acabados)</td><td>1.280 und</td><td>1.280 × 43,36</td><td style="text-align:right;font-family:'JetBrains Mono',monospace;color:#f4c842">R$ 55.500,00</td></tr>
-      <tr style="font-weight:700"><td style="color:#f4c842">TOTAL CPP</td><td style="color:#f4c842">1.530 und</td><td></td><td style="text-align:right;font-family:'JetBrains Mono',monospace;color:#f4c842">R$ 66.340,00</td></tr>
+      <tr><td>Est. Elaboração Final</td><td>250 und</td><td>250 × 43,36</td><td style="text-align:right;font-family:monospace;color:#f4c842">R$ 10.840,00</td></tr>
+      <tr><td>CPA (produtos acabados)</td><td>1.280 und</td><td>1.280 × 43,36</td><td style="text-align:right;font-family:monospace;color:#f4c842">R$ 55.500,00</td></tr>
+      <tr style="font-weight:700"><td style="color:#f4c842">TOTAL CPP</td><td style="color:#f4c842">1.530 und</td><td></td><td style="text-align:right;font-family:monospace;color:#f4c842">R$ 66.340,00</td></tr>
     </table>
     <hr class="gold">
     <div style="font-size:.78rem;font-weight:700;color:#94a3b8;margin-bottom:12px;text-transform:uppercase">CPV — MÉTODO MÉDIA PONDERADA</div>
     <table class="data-table">
       <tr><th>Componente</th><th>Qtd</th><th>Valor</th></tr>
-      <tr><td>Est. Acabados Inicial</td><td>1.060 und</td><td style="font-family:'JetBrains Mono',monospace">R$ 44.536,00</td></tr>
-      <tr><td>+ CPA (prod. acabados no período)</td><td>1.400 und</td><td style="font-family:'JetBrains Mono',monospace">R$ 60.703,20</td></tr>
-      <tr><td style="color:#94a3b8;font-size:.8rem">→ CPA = Est. Elab. Inicial + CPP aplicado</td><td style="color:#94a3b8;font-size:.8rem">5.203,20 + 55.500</td><td style="color:#94a3b8;font-size:.8rem;font-family:'JetBrains Mono',monospace">= 60.703,20</td></tr>
-      <tr style="border-top:1px solid rgba(244,200,66,.3)"><td>= Total Disponível p/ Venda</td><td>2.460 und</td><td style="font-family:'JetBrains Mono',monospace">R$ 105.239,20</td></tr>
-      <tr><td style="color:#f4c842">÷ Custo Médio Ponderado</td><td></td><td style="color:#f4c842;font-family:'JetBrains Mono',monospace;font-weight:700">R$ 42,78/und</td></tr>
-      <tr><td>Vendidas × 2.000 und</td><td>2.000 und</td><td style="font-family:'JetBrains Mono',monospace;color:#f4c842;font-weight:700">CPV = R$ 85.560,00</td></tr>
-      <tr><td>Est. Acab. Final (460 und × R$42,78)</td><td>460 und</td><td style="font-family:'JetBrains Mono',monospace;color:#34d399">R$ 19.678,80</td></tr>
+      <tr><td>Est. Acabados Inicial</td><td>1.060 und</td><td style="font-family:monospace">R$ 44.536,00</td></tr>
+      <tr><td>+ CPA (prod. acabados no período)</td><td>1.400 und</td><td style="font-family:monospace">R$ 60.703,20</td></tr>
+      <tr><td style="color:#94a3b8;font-size:.8rem">→ CPA = Est. Elab. Inicial + CPP aplicado</td><td style="color:#94a3b8;font-size:.8rem">5.203,20 + 55.500</td><td style="color:#94a3b8;font-size:.8rem;font-family:monospace">= 60.703,20</td></tr>
+      <tr style="border-top:1px solid rgba(244,200,66,.3)"><td>= Total Disponível p/ Venda</td><td>2.460 und</td><td style="font-family:monospace">R$ 105.239,20</td></tr>
+      <tr><td style="color:#f4c842">÷ Custo Médio Ponderado</td><td></td><td style="color:#f4c842;font-family:monospace;font-weight:700">R$ 42,78/und</td></tr>
+      <tr><td>Vendidas × 2.000 und</td><td>2.000 und</td><td style="font-family:monospace;color:#f4c842;font-weight:700">CPV = R$ 85.560,00</td></tr>
+      <tr><td>Est. Acab. Final (460 und × R$42,78)</td><td>460 und</td><td style="font-family:monospace;color:#34d399">R$ 19.678,80</td></tr>
     </table>
   </div>
   <div style="margin-top:12px"><button class="btn btn-outline" onclick="document.getElementById('cppResultCard').style.display='block'">📊 Ver distribuição e CPV</button></div>
@@ -469,7 +470,7 @@ hr.gold{border:none;border-top:1px solid rgba(244,200,66,.2);margin:20px 0}
   <div id="quizIntro">
     <div class="card card-gold" style="text-align:center;padding:40px">
       <div style="font-size:3rem;margin-bottom:16px">🎓</div>
-      <div style="font-family:'Playfair Display',serif;font-size:1.5rem;color:#f4c842;margin-bottom:12px">Pronto para o Quiz?</div>
+      <div style="font-family:serif;font-size:1.5rem;color:#f4c842;margin-bottom:12px">Pronto para o Quiz?</div>
       <p style="color:#94a3b8;margin-bottom:24px">12 questões sobre Contabilidade Industrial cobrindo todos os temas deste exercício.</p>
       <button class="btn btn-gold" style="font-size:1rem;padding:14px 36px" onclick="startQuiz()">🚀 Começar Quiz</button>
     </div>
@@ -493,7 +494,7 @@ hr.gold{border:none;border-top:1px solid rgba(244,200,66,.2);margin:20px 0}
   <div id="quizResult" style="display:none">
     <div class="card card-gold" style="text-align:center;padding:40px">
       <div id="resultIcon" style="font-size:3rem;margin-bottom:12px">🏆</div>
-      <div style="font-family:'Playfair Display',serif;font-size:1.6rem;color:#f4c842;margin-bottom:8px" id="resultTitle"></div>
+      <div style="font-family:serif;font-size:1.6rem;color:#f4c842;margin-bottom:8px" id="resultTitle"></div>
       <div style="font-size:1.2rem;color:#e2e8f0;margin-bottom:20px" id="resultScore"></div>
       <div class="progress-bar" style="max-width:300px;margin:0 auto 24px"><div class="progress-fill" id="resultFill"></div></div>
       <div id="reviewList" style="text-align:left;margin-bottom:24px"></div>
@@ -819,23 +820,24 @@ function renderRazonetes() {
     // Saldo input row
     const sideLbl = g.side==='D' ? 'Sd (D)' : 'Sc (C)';
     html += '<div class="raz-entry saldo" style="border-right:1px solid #243558">';
-    html += g.side==='D' ? '<span style="font-size:.7rem;color:#64748b">'+sideLbl+'</span><input type="number" class="equiv-input" style="width:100px" placeholder="Saldo?" id="razIn_D_'+acc.replace(/[^a-z0-9]/gi,'_')+'" value="'+savedD+'" onchange="saveRaz(''+acc.replace(/'/g,"\'")+'')">' : '<span></span>';
+    html += g.side==='D'
+      ? '<span style="font-size:.7rem;color:#64748b">'+sideLbl+'</span><input type="number" class="equiv-input" style="width:100px" placeholder="Saldo?" id="razIn_D_'+key+'" value="'+savedD+'" data-acc="'+acc+'" data-side="D" onchange="saveRaz(this)">'
+      : '<span></span>';
     html += '</div>';
     html += '<div class="raz-entry saldo">';
-    html += g.side==='C' ? '<span style="font-size:.7rem;color:#64748b">'+sideLbl+'</span><input type="number" class="equiv-input" style="width:100px" placeholder="Saldo?" id="razIn_C_'+acc.replace(/[^a-z0-9]/gi,'_')+'" value="'+savedC+'" onchange="saveRaz(''+acc.replace(/'/g,"\'")+'')">' : '<span></span>';
+    html += g.side==='C'
+      ? '<span style="font-size:.7rem;color:#64748b">'+sideLbl+'</span><input type="number" class="equiv-input" style="width:100px" placeholder="Saldo?" id="razIn_C_'+key+'" value="'+savedC+'" data-acc="'+acc+'" data-side="C" onchange="saveRaz(this)">'
+      : '<span></span>';
     html += '</div>';
-
     html += '</div></div>'; // raz-grid + razonete
   }
   container.innerHTML = html;
 }
 
-function saveRaz(acc) {
-  const key = acc.replace(/[^a-z0-9]/gi,'_');
-  const dEl = document.getElementById('razIn_D_'+key);
-  const cEl = document.getElementById('razIn_C_'+key);
-  if (dEl) localStorage.setItem('raz_D_'+acc, dEl.value);
-  if (cEl) localStorage.setItem('raz_C_'+acc, cEl.value);
+function saveRaz(el) {
+  const acc = el.dataset.acc;
+  const side = el.dataset.side;
+  if (acc && side) localStorage.setItem('raz_'+side+'_'+acc, el.value);
 }
 
 function checkAllRaz() {
@@ -930,10 +932,10 @@ function renderBPTable(items, useGabarito, label) {
       const v = bpVal(row.acc, useGabarito);
       const sign = row.neg ? -v : v;
       total += sign;
-      html += '<div class="bp-row"><span>'+row.label+'</span><span style="font-family:'JetBrains Mono',monospace;color:'+(row.neg?'#fca5a5':'#e2e8f0')+'">R$ '+(row.neg?'('+fmt(v)+')':fmt(v))+'</span></div>';
+      html += '<div class="bp-row"><span>'+row.label+'</span><span class="mono-val" style="color:'+(row.neg?'#fca5a5':'#e2e8f0')+'">R$ '+(row.neg?'('+fmt(v)+')':fmt(v))+'</span></div>';
     }
   }
-  html += '<div class="bp-row total"><span>TOTAL '+label+'</span><span style="font-family:'JetBrains Mono',monospace">R$ '+fmt(total)+'</span></div>';
+  html += '<div class="bp-row total"><span>TOTAL '+label+'</span><span style="font-family:monospace">R$ '+fmt(total)+'</span></div>';
   html += '</div>';
   return {html, total};
 }
@@ -944,18 +946,18 @@ function showBP(mode) {
   if (mode==='inicial') {
     const a = renderBPTable(BP_ATIVO_I, false, 'ATIVO');
     const p = renderBPTable(BP_PASSIVO_I, false, 'PASSIVO + PL');
-    cont.innerHTML = '<div style="display:grid;grid-template-columns:1fr 1fr;gap:20px"><div class="card"><div style="font-family:'Playfair Display',serif;color:#f4c842;font-size:1.1rem;margin-bottom:16px">ATIVO — Inicial</div>'+a.html+'</div><div class="card"><div style="font-family:'Playfair Display',serif;color:#f4c842;font-size:1.1rem;margin-bottom:16px">PASSIVO + PL — Inicial</div>'+p.html+'</div></div>';
+    cont.innerHTML = '<div style="display:grid;grid-template-columns:1fr 1fr;gap:20px"><div class="card"><div style="font-family:serif;color:#f4c842;font-size:1.1rem;margin-bottom:16px">ATIVO — Inicial</div>'+a.html+'</div><div class="card"><div style="font-family:serif;color:#f4c842;font-size:1.1rem;margin-bottom:16px">PASSIVO + PL — Inicial</div>'+p.html+'</div></div>';
   } else if (mode==='final') {
     const a = renderBPTable(BP_ATIVO_I, true, 'ATIVO');
     const p = renderBPTable(BP_PASSIVO_I, true, 'PASSIVO + PL');
     const eq = Math.abs(a.total - p.total) < 1;
-    cont.innerHTML = '<div class="msg '+(eq?'msg-success':'msg-error')+'" style="margin-bottom:16px">'+(eq?'✅ Balanço equilibrado! Ativo = Passivo + PL':'⚠️ Diferença de R$ '+fmt(Math.abs(a.total-p.total)))+'</div><div style="display:grid;grid-template-columns:1fr 1fr;gap:20px"><div class="card"><div style="font-family:'Playfair Display',serif;color:#f4c842;font-size:1.1rem;margin-bottom:16px">ATIVO — Final</div>'+a.html+'</div><div class="card"><div style="font-family:'Playfair Display',serif;color:#f4c842;font-size:1.1rem;margin-bottom:16px">PASSIVO + PL — Final</div>'+p.html+'</div></div>';
+    cont.innerHTML = '<div class="msg '+(eq?'msg-success':'msg-error')+'" style="margin-bottom:16px">'+(eq?'✅ Balanço equilibrado! Ativo = Passivo + PL':'⚠️ Diferença de R$ '+fmt(Math.abs(a.total-p.total)))+'</div><div style="display:grid;grid-template-columns:1fr 1fr;gap:20px"><div class="card"><div style="font-family:serif;color:#f4c842;font-size:1.1rem;margin-bottom:16px">ATIVO — Final</div>'+a.html+'</div><div class="card"><div style="font-family:serif;color:#f4c842;font-size:1.1rem;margin-bottom:16px">PASSIVO + PL — Final</div>'+p.html+'</div></div>';
   } else {
     const ai = renderBPTable(BP_ATIVO_I, false, 'ATIVO INICIAL');
     const af = renderBPTable(BP_ATIVO_I, true, 'ATIVO FINAL');
     const pi = renderBPTable(BP_PASSIVO_I, false, 'PASSIVO+PL INICIAL');
     const pf = renderBPTable(BP_PASSIVO_I, true, 'PASSIVO+PL FINAL');
-    cont.innerHTML = '<div style="display:grid;grid-template-columns:1fr 1fr;gap:20px"><div class="card"><div style="font-family:'Playfair Display',serif;color:#f4c842;font-size:1.1rem;margin-bottom:16px">ATIVO Inicial vs Final</div>'+ai.html+'<hr class="gold">'+af.html+'</div><div class="card"><div style="font-family:'Playfair Display',serif;color:#f4c842;font-size:1.1rem;margin-bottom:16px">PASSIVO+PL Inicial vs Final</div>'+pi.html+'<hr class="gold">'+pf.html+'</div></div>';
+    cont.innerHTML = '<div style="display:grid;grid-template-columns:1fr 1fr;gap:20px"><div class="card"><div style="font-family:serif;color:#f4c842;font-size:1.1rem;margin-bottom:16px">ATIVO Inicial vs Final</div>'+ai.html+'<hr class="gold">'+af.html+'</div><div class="card"><div style="font-family:serif;color:#f4c842;font-size:1.1rem;margin-bottom:16px">PASSIVO+PL Inicial vs Final</div>'+pi.html+'<hr class="gold">'+pf.html+'</div></div>';
   }
 }
 
